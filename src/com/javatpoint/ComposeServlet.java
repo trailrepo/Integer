@@ -25,7 +25,7 @@ public class ComposeServlet extends HttpServlet {
 		}else{
 			String email=(String)session.getAttribute("email");
 			out.print("<span style='float:right'>Hi, "+email+"</span>");
-			
+			System.out.println("ERROR ADDED")
 			String msg=(String)request.getAttribute("msg");
 			if(msg!=null){
 				out.print("<p>"+msg+"</p>");
